@@ -34,7 +34,8 @@ st.markdown("<p style='text-align: center; font-size: 16px;'>Competição para p
 st.divider()
 
 # --- CRIANDO AS ABAS PRINCIPAIS ---
-desafio1, desafio2 = st.tabs(["1° DESAFIO", "2° DESAFIO"])
+desafio1, desafio2 = st.tabs(["1° DESAFIO", "2° DESAFIO"], default="1° DESAFIO")
+
 
 with desafio1:
     # --- CONFIGURAÇÃO DE DADOS GLOBAL ---
@@ -235,7 +236,7 @@ with desafio1:
 
 
     # --- CRIANDO AS ABAS ---
-    tab1, tab2, tab3 = st.tabs(["🏆 Dashboard Principal", "📋 Regras", "🕵️‍♂️ Auditoria & Transparência"])
+    tab1, tab2, tab3 = st.tabs(["Dashboard Principal", "Regras", "Auditoria & Transparência"])
 
     # ==========================================
     # ABA 1: DASHBOARD PRINCIPAL
